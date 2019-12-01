@@ -1,0 +1,15 @@
+{
+  "name": "toni-site",
+  "version": "0.0.1",
+  "description": "web site",
+  "main": "index.js",
+  "dependencies": {
+    "lr-http-server": "^0.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "./node_modules/.bin/lr-http-server "
+  },
+  "author": "gendy",
+  "license": "ISC"
+}
