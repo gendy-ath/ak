@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Data-segments</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="icon" href="icons/fav-icon-ak.png" type="image/png" sizes="200x200">
+        <link rel="stylesheet" href="css/style.css">
+        <!--CDN BOOTSTRAP-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!--Scripts-->
+       <script src="js/ak-scripts.js"></script>
+       <script src="ak-nav-project.riot" type="riot"></script>
+       <script src="https://cdn.jsdelivr.net/npm/riot@4/riot+compiler.min.js"></script>
+   <script>
+       riot.compile().then(() => {
+         riot.mount('ak-project-header')
+       })
+     </script>
+     <script src="/js/ak-project-header.js"></script>
+       
+
+    </head>
+    <body>
+            <ak-project-header></ak-project-header>
+            <button class="sound-button" id="mute-video">
+                    sound
+                   
+                </button>
+            <div class="project-page">
+            <div class="container-fluid">
+                    <div class="row text-container">
+                        <div class="col-lg-12 project-title" id="project-name-id-master" >
+                            Data Segments
+                        </div>
+                     <div class="col-lg-12 project-text">
+                        The project seeks to examine the dynamics in social networks through physical and digital space in order to experiment with generative sonic and visual compositions. This project focuses on a computational model that could extend generative rules, by exploring the finite sets of algorithms and its limits.                     </div>  
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 sub-infos-project">
+                            <p class="sub-labels">multimedia environment</p>
+                           
+                            <p class="sub-labels">2015</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row no-gutters">
+                        <div class="col-lg-6 project-img-item">
+                                <img class="img-responsive" src="img/segments/data-segments-1.jpg"/>
+                                <div class="img-caption">
+                                    Data Segments - still - 2015
+                                </div>
+                    </div>
+                
+                    
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="col-lg-12">
+                            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/162841083?autoplay=1&loop=1&color=ffffff&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+
+    </body>
+    </html>

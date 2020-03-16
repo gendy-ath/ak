@@ -4,11 +4,15 @@
   "description": "web site",
   "main": "index.js",
   "dependencies": {
-    "lr-http-server": "^0.1.5"
+    "lr-http-server": "^0.1.5",
+    "riot": "^4.11.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@riotjs/compiler": "^4.5.3",
+    "@riotjs/webpack-loader": "^4.0.1"
+  },
   "scripts": {
-    "dev": "./node_modules/.bin/lr-http-server "
+    "dev": "lr-http-server "
   },
   "author": "gendy",
   "license": "ISC"
