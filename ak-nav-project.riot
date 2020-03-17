@@ -2,7 +2,9 @@
    
                 
                 <nav class="navbar fixed-top navbar-dark bg-toni">
-                        <a id ="ak-name" class="navbar-brand name-brand" href="#">Antonis Kalagkatsis   </a>
+                        <a id ="ak-name" class="navbar-brand name-brand d-none d-lg-block" href="/">Antonis Kalagkatsis</a>
+                        <a id ="ak-name-short" class="navbar-brand name-brand d-lg-none d-block" href="/">ak</a>
+                        
                         
                         <div id ="project-title-id" class="project-name-navbar invisible"></div>
                         <div id ="about-title-id" class="project-name-navbar invisible">about</div>
@@ -42,6 +44,8 @@
                           <script>
 
 $(document).ready(function(){
+
+ 
   $('.collapse').on('shown.bs.collapse', function () {
    
     $('.navbar').addClass('header-nav-black');
@@ -65,6 +69,7 @@ $(document).ready(function(){
     $('#project-title-id').removeClass('ak-none');
     
   });
+    
   });
   </script>
             

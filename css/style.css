@@ -261,8 +261,9 @@ div#info-container {
   }
   .project-img-item:hover .img-caption{
       opacity:1;
-      cursor:crosshair;
+     
   }
+ 
   .sound-button{
       position: fixed;
       right: 0;
@@ -295,14 +296,7 @@ div#info-container {
   right: 0;
   top: 50%;
 }
-.project-name-navbar{
-    color:white;
-   display: inline-block;
-   font-family: 'gt_americaexpanded_thin';
-   font-size:0.55rem;
-   text-transform: lowercase;
-   flex-grow: 1;
-}
+
 
 .fade-in-left {
 	-webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -361,17 +355,42 @@ div#info-container {
       opacity: 0;
     }
   }
+
+@media (max-width: 992px){
+
+  .home-page{
+    margin-top:5rem;
+  
+}
+.project-name-navbar{
+  color:white;
+ font-family: 'gt_americaexpanded_thin';
+ font-size:1rem;
+ text-transform: lowercase;
+ flex-grow: 1;
+}
+.index-list{
+  font-size: 1rem;
+}
+
+}
+
   @media (min-width: 576px) {
+    .project-title{
+      font-size:6rem !important;
+    }
+
+    
     .index-list{
       font-size: 4em;
       margin-bottom: 0px;
     }
     span.sub-text {
-      font-size: 1em;
+      font-size: 1.25rem;
 
       left: 1em;
       
-      bottom: -10px;  
+      bottom: -1rem;  
   }
   .info-text{
     font-size: 4em;
@@ -388,7 +407,7 @@ div#info-container {
   padding-bottom: 3%;
 }
 .project-title{
-  font-size:6rem;
+  font-size:3rem;
 }
 .project-name-navbar{
 

@@ -47,30 +47,51 @@ $(window).scroll(function(){
 
 
 
-$(window).resize(function(){
-
-  if ($(window).width() <= 576) {  
-
-    $('#ak-name').html('ak');
-
-
-  } 
-  else{
-    $('#ak-name').html('antonis kalagkatsis');
-  }    
-
-});
-
 $(document).ready(function(){
 
-  if ($(window).width() <= 576) {  
 
+
+  if (window.matchMedia('(max-width: 992px)').matches) {
     $('#ak-name').html('ak');
+   
+} else {
+  $('#ak-name').html('antonis kalagkatsis');
+}
 
 
-  } 
-  else{
-    $('#ak-name').html('antonis kalagkatsis');
-  }    
 
 });
+
+
+// media query event handler
+/*
+if (matchMedia) {
+  var mq = window.matchMedia("(min-width: 992px)");
+  mq.addListener(WidthChange);
+  WidthChange(mq);
+}
+
+// media query change
+function WidthChange(mq) {
+
+  if (mq.matches) {
+      // window width is at least 500px
+      $('#ak-name').html('antonis kalagkatsis');
+  }
+  else {
+      // window width is less than 500px
+      $('#ak-name').html('ak');
+      
+  }
+
+}
+*/
+
+if ($(window).width() < 992) {
+  ('#ak-name').html('ak');
+}
+else {
+  $('#ak-name').html('antonis kalagkatsis');
+}
+
+
