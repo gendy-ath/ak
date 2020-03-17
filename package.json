@@ -12,7 +12,7 @@
     "@riotjs/webpack-loader": "^4.0.1"
   },
   "scripts": {
-    "dev": "lr-http-server "
+    "dev": "./node_modules/.bin/lr-http-server"
   },
   "author": "gendy",
   "license": "ISC"
