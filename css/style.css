@@ -167,13 +167,14 @@ word-break: break-word;
   }
 }
 .project-page{
-    padding-top:150px;
+    margin-top:150px;
 }
 .project-title{
-    font-size:3em;
-    line-height: 1em;
+  font-size: 3rem;
+  line-height: 2.5rem;
     color:white;
-    margin-bottom:1.5rem;
+    margin-bottom:2rem;
+    word-break: break-all;
 }
 .project-text{
   font-size: 23px;
@@ -184,7 +185,7 @@ word-break: break-word;
   color:white;
   font-family: gt_americaexpanded_thin;
   font-size:16px;
-  margin-bottom:1%;
+  margin-bottom:6rem;
   line-height: 1em;
 }
 p.sub-labels{
@@ -212,7 +213,7 @@ audio, canvas, progress, video {
   vertical-align: baseline;
 }
 .text-container{
-  margin-bottom:5%;
+  margin-bottom:2rem;
 }
 div#info-container {
   position: fixed;
@@ -296,7 +297,9 @@ position: absolute;
 right: 0;
 top: 50%;
 }
-
+.pad-bottom {
+  padding-bottom: 5vh;
+}
 
 .fade-in-left {
 -webkit-animation: fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
@@ -360,17 +363,46 @@ top: 50%;
 
 .home-page{
   margin-top:5rem;
-
 }
+.project-page{
+  margin-top:5rem;
+}
+.header-drop{
+  font-size:1rem !important;
+}
+.navbar-brand{
+  font-size: 1rem !important;
+}
+.project-text {
+  font-size: 18px;
+ 
+  line-height: 1.1em;
+}
+.sub-infos-project {
+
+  font-size: 12px;
+  line-height: 1em;
+  margin-bottom: 2rem;
+}
+
 .project-name-navbar{
 color:white;
 font-family: 'gt_americaexpanded_thin';
-font-size:1rem;
+font-size:.8rem;
 text-transform: lowercase;
 flex-grow: 1;
+position: absolute;
+left: 50px;
+right: 75px;
+line-height: 100%;
 }
 .index-list{
-font-size: 1rem;
+font-size: 1.25rem;
+margin-bottom:1.25rem;
+}
+.card-body {
+  padding-top: 80px !important;
+ 
 }
 
 }
@@ -378,6 +410,8 @@ font-size: 1rem;
 @media (min-width: 576px) {
   .project-title{
     font-size:6rem !important;
+    line-height: 5rem !important;
+    word-break: break-word;
   }
 
   
@@ -406,9 +440,7 @@ color: black;
 padding-top: 3%;
 padding-bottom: 3%;
 }
-.project-title{
-font-size:3rem;
-}
+
 .project-name-navbar{
   color:white;
  display: inline-block;

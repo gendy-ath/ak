@@ -24,20 +24,20 @@ $('#mute-video').addClass('sound-off');
 
 $(window).scroll(function(){
   var projectNameText = $('#project-name-id-master').html();
-  if ($(this).scrollTop() > 300) {
+  if ($(this).scrollTop() > 200) {
   
     $('#project-title-id').text(projectNameText);
     $('#project-title-id').removeClass('invisible');
     $('#project-title-id').removeClass('fade-out-left');
      $('#project-title-id').addClass('fade-in-left');
-     $('.navbar').addClass('transparent');
+     //$('.navbar').addClass('transparent');
      
      
   } else {
    
     $('#project-title-id').removeClass('fade-in-left');
     $('#project-title-id').addClass('fade-out-left');
-    $('.navbar').removeClass('transparent');
+    //$('.navbar').removeClass('transparent');
    
     
     
@@ -63,35 +63,6 @@ $(document).ready(function(){
 });
 
 
-// media query event handler
-/*
-if (matchMedia) {
-  var mq = window.matchMedia("(min-width: 992px)");
-  mq.addListener(WidthChange);
-  WidthChange(mq);
-}
 
-// media query change
-function WidthChange(mq) {
-
-  if (mq.matches) {
-      // window width is at least 500px
-      $('#ak-name').html('antonis kalagkatsis');
-  }
-  else {
-      // window width is less than 500px
-      $('#ak-name').html('ak');
-      
-  }
-
-}
-*/
-
-if ($(window).width() < 992) {
-  ('#ak-name').html('ak');
-}
-else {
-  $('#ak-name').html('antonis kalagkatsis');
-}
 
 
