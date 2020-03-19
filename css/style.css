@@ -23,6 +23,17 @@ background: white;
 color: blue;
 background: white;
 }
+.sub-labels > a{
+ 
+  color:white !important;
+  text-decoration: underline;
+ 
+}
+.sub-labels > a:hover{
+  color: blue !important;
+  background: white !important;
+  cursor: alias;
+}
 .index-bg-image {
 
 height: 100vh;
